@@ -17,6 +17,8 @@ public class ResultPresenter : MonoBehaviour
 
     public GameObject baby, boy, man;
 
+    public GameObject fireFlower1, fireFlower2;
+
     GameModel model;
 
     float increasingScore, increasingCombo;
@@ -33,6 +35,8 @@ public class ResultPresenter : MonoBehaviour
         Observable.Timer(TimeSpan.FromSeconds(2.5f)).Subscribe(_AppDomain =>
         {
             resultBGM.Play();
+            fireFlower1.SetActive(true);
+            fireFlower2.SetActive(true);
             if (model.score < model.toBoyScore)
             {
                 baby.SetActive(true);

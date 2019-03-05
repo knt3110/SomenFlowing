@@ -13,8 +13,12 @@ public class GamePresenter : MonoBehaviour
     public GameObject greatJudge;
     public AudioSource BGM;
     public GameObject baby, boy, man;
+    public GameObject charaChangeParticle;
 
     GameModel model;
+
+    bool toBoyFlag = true;
+    bool toManFlag = true;
 
 	void Start () {
         model = GameModel.Instance;
@@ -35,13 +39,30 @@ public class GamePresenter : MonoBehaviour
         }
         else if (model.score >= model.toBoyScore && model.score < model.toManScore)
         {
-            baby.SetActive(false);
-            boy.SetActive(true);
+            if (toBoyFlag)
+            {
+                toBoyFlag = false;
+                charaChangeParticle.SetActive(true);
+                Observable.Timer(TimeSpan.FromSeconds(1.5f)).Subscribe(_ =>
+                {
+                    boy.SetActive(true);
+                    baby.SetActive(false);
+                }).AddTo(this);
+            }
         }
         else if (model.score >= model.toManScore)
         {
-            boy.SetActive(false);
-            man.SetActive(true);
+            if (toManFlag)
+            {
+                toManFlag = false;
+                charaChangeParticle.SetActive(false);
+                charaChangeParticle.SetActive(true);
+                Observable.Timer(TimeSpan.FromSeconds(1.5f)).Subscribe(_ =>
+                {
+                    boy.SetActive(false);
+                    man.SetActive(true);
+                }).AddTo(this);
+            }
         }
 
         if (!BGM.isPlaying)
