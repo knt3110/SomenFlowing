@@ -57,7 +57,7 @@ public class ResultPresenter : MonoBehaviour
         if (increasingScore <= model.score)
         {
             increasingScore += model.score / 120f;
-            scorText.text = "スコア : " + increasingScore;
+            scorText.text = "スコア : " + (int)increasingScore;
         }
         else
         {
@@ -67,7 +67,7 @@ public class ResultPresenter : MonoBehaviour
         if (increasingCombo <= model.maxComboNum)
         {
             increasingCombo += model.maxComboNum / 120f;
-            comboText.text = "コンボ : " + increasingCombo;
+            comboText.text = "コンボ : " + (int)increasingCombo;
         }
         else
         {

@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{5C28AD2D-0A31-FF43-ACF0-26E4A0AC153D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GamePresenter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/CSV/test3.csv">
     <Files>
-      <File FileName="Assets/Scripts/GamePresenter.cs" Line="46" Column="31" />
+      <File FileName="Assets/Scripts/GamePresenter.cs" Line="136" Column="1" />
       <File FileName="Assets/Scripts/GameView.cs" Line="39" Column="45" />
       <File FileName="Assets/Scripts/GoodJudgeController.cs" Line="26" Column="37" />
-      <File FileName="Assets/Scripts/GreatJudgeController.cs" Line="20" Column="28" />
+      <File FileName="Assets/Scripts/GreatJudgeController.cs" Line="14" Column="10" />
       <File FileName="Assets/Scripts/BanishZoneController.cs" Line="15" Column="31" />
       <File FileName="Assets/Scripts/TtilePresenter.cs" Line="11" Column="33" />
       <File FileName="Assets/Scripts/ExplainPresenter.cs" Line="22" Column="35" />
       <File FileName="Assets/Scripts/TextGoalController.cs" Line="10" Column="35" />
-      <File FileName="Assets/Scripts/ResultPresenter.cs" Line="84" Column="6" />
-      <File FileName="Assets/Scripts/GameModel.cs" Line="17" Column="38" />
+      <File FileName="Assets/Scripts/ResultPresenter.cs" Line="60" Column="58" />
+      <File FileName="Assets/Scripts/GameModel.cs" Line="23" Column="33" />
       <File FileName="Assets/Scripts/RecordPresenter.cs" Line="15" Column="34" />
-      <File FileName="Assets/Resources/CSV/test2.csv" Line="1" Column="1" />
+      <File FileName="Assets/Resources/CSV/test2.csv" Line="129" Column="11" />
+      <File FileName="Assets/Resources/CSV/test3.csv" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

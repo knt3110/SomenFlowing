@@ -12,15 +12,15 @@ public class GameModel : MonoBehaviour
     public int combo = 0;
     public int maxComboNum = 0;
 
-    public int perfectScore = 200 * 129;
+    public int perfectScore = 200 * 110;
     public int toBoyScore = 200 * 30;
-    public int toManScore = 200 * 100;
+    public int toManScore = 200 * 90;
 
     public List<string[]> somenList = new List<string[]>();
 
     public void ReadCSVFile()
     {
-        string filename = "test2";
+        string filename = "test3";
         var CSVFile = Resources.Load("CSV/" + filename) as TextAsset;
         var reader = new StringReader(CSVFile.text);
 

@@ -105,31 +105,31 @@ public class GamePresenter : MonoBehaviour
     {
         GameObject goodJudgeObject = Instantiate(goodJudge, new Vector3(-5.07f, -3.73f, -1f), Quaternion.identity);
         GameObject greatJudgeObject = Instantiate(greatJudge, new Vector3(-5.07f, -3.73f, -1f), Quaternion.identity);
-        Destroy(goodJudgeObject, 0.1f);
-        Destroy(greatJudgeObject, 0.1f);
+        Destroy(goodJudgeObject, 0.2f);
+        Destroy(greatJudgeObject, 0.2f);
     }
 
     public void TapButton2()
     {
         GameObject goodJudgeObject = Instantiate(goodJudge, new Vector3(-1.72f, -3.73f, -1f), Quaternion.identity);
         GameObject greatJudgeObject = Instantiate(greatJudge, new Vector3(-1.72f, -3.73f, -1f), Quaternion.identity);
-        Destroy(goodJudgeObject, 0.1f);
-        Destroy(greatJudgeObject, 0.1f);
+        Destroy(goodJudgeObject, 0.2f);
+        Destroy(greatJudgeObject, 0.2f);
     }
 
     public void TapButton3()
     {
         GameObject goodJudgeObject = Instantiate(goodJudge, new Vector3(1.72f, -3.73f, -1f), Quaternion.identity);
         GameObject greatJudgeObject = Instantiate(greatJudge, new Vector3(1.72f, -3.73f, -1f), Quaternion.identity);
-        Destroy(goodJudgeObject, 0.1f);
-        Destroy(greatJudgeObject, 0.1f);
+        Destroy(goodJudgeObject, 0.2f);
+        Destroy(greatJudgeObject, 0.2f);
     }
 
     public void TapButton4()
     {
         GameObject goodJudgeObject = Instantiate(goodJudge, new Vector3(5.07f, -3.73f, -1f), Quaternion.identity);
         GameObject greatJudgeObject = Instantiate(greatJudge, new Vector3(5.07f, -3.73f, -1f), Quaternion.identity);
-        Destroy(goodJudgeObject, 0.1f);
-        Destroy(greatJudgeObject, 0.1f);
+        Destroy(goodJudgeObject, 0.2f);
+        Destroy(greatJudgeObject, 0.2f);
     }
 }
