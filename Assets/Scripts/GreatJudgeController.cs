@@ -14,7 +14,7 @@ public class GreatJudgeController : MonoBehaviour
         {
             Destroy(collision.gameObject);
             GameObject pickedSomen = Instantiate(PickedSomenGreat, gameObject.transform.position + new Vector3(0.11f, 0f, 0f), gameObject.transform.rotation);
-            Destroy(pickedSomen, 1f);
+            Destroy(pickedSomen, 0.3f);
 
             view = FindObjectOfType<GameView>();
             view.ScoreUPGreat();

@@ -23,8 +23,8 @@ public class GoodJudgeController : MonoBehaviour
             Destroy(collision.gameObject);
             somenPicked.Play();
             GameObject pickedSomen = Instantiate(pickedSomenGood, gameObject.transform.position + new Vector3(0.11f, 0f, 1f), gameObject.transform.rotation);
-            Destroy(pickedSomen, 0.5f);
-
+            Destroy(pickedSomen, 0.3f);
+           
             view = FindObjectOfType<GameView>();
             view.ScoreUPGood();
         }

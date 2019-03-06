@@ -23,6 +23,11 @@ public class GamePresenter : MonoBehaviour
     int somenListIndex = 0;
     float currentTime = 0;
 
+    private void Awake()
+    {
+        Application.targetFrameRate = 60;
+    }
+
     void Start () {
         model = GameModel.Instance;
         model.ReadCSVFile();

@@ -39,5 +39,6 @@ public class GameModel : MonoBehaviour
         score = 0;
         combo = 0;
         maxComboNum = 0;
+        somenList = new List<string[]>();
     }
 }

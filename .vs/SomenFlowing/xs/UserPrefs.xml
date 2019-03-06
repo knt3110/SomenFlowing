@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{5C28AD2D-0A31-FF43-ACF0-26E4A0AC153D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/CSV/test2.csv">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GamePresenter.cs">
     <Files>
       <File FileName="Assets/Scripts/GamePresenter.cs" Line="46" Column="31" />
       <File FileName="Assets/Scripts/GameView.cs" Line="39" Column="45" />
@@ -10,23 +10,10 @@
       <File FileName="Assets/Scripts/ExplainPresenter.cs" Line="22" Column="35" />
       <File FileName="Assets/Scripts/TextGoalController.cs" Line="10" Column="35" />
       <File FileName="Assets/Scripts/ResultPresenter.cs" Line="84" Column="6" />
-      <File FileName="Assets/Scripts/GameModel.cs" Line="24" Column="33" />
+      <File FileName="Assets/Scripts/GameModel.cs" Line="17" Column="38" />
       <File FileName="Assets/Scripts/RecordPresenter.cs" Line="15" Column="34" />
       <File FileName="Assets/Resources/CSV/test2.csv" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="SomenFlowing" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="GameModel.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
