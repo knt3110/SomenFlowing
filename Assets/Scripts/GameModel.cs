@@ -21,7 +21,7 @@ public class GameModel : MonoBehaviour
 
     public void ReadCSVFile()
     {
-        string filename = "somenList1";
+        string filename = "test1";
         var CSVFile = Resources.Load("CSV/" + filename) as TextAsset;
         var reader = new StringReader(CSVFile.text);
 
