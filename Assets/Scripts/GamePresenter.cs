@@ -20,18 +20,50 @@ public class GamePresenter : MonoBehaviour
     bool toBoyFlag = true;
     bool toManFlag = true;
 
-	void Start () {
+    int somenListIndex = 0;
+    float currentTime = 0;
+
+    void Start () {
         model = GameModel.Instance;
+        model.ReadCSVFile();
 	}
-	
-	void Update () {
-        if (Input.GetKeyDown(KeyCode.A))
+
+	void Update () 
+    {
+        currentTime += Time.deltaTime;
+        Debug.Log(currentTime);
+
+        if (somenListIndex < model.somenList.Count)
         {
-            Instantiate(somen1, start1.transform.position, start1.transform.rotation);
-            Instantiate(somen2, start2.transform.position, start2.transform.rotation);
-            Instantiate(somen3, start3.transform.position, start3.transform.rotation);
-            Instantiate(somen4, start4.transform.position, start4.transform.rotation);
+            if (float.Parse(model.somenList[somenListIndex][0]) < currentTime)
+            {
+                Debug.Log(float.Parse(model.somenList[somenListIndex][0]));
+                Debug.Log(somenListIndex);
+                switch (int.Parse(model.somenList[somenListIndex][1]))
+                {
+                    case 1:
+                        Instantiate(somen1, start1.transform.position, start1.transform.rotation);
+                        break;
+                    case 2:
+                        Instantiate(somen2, start2.transform.position, start2.transform.rotation);
+                        break;
+                    case 3:
+                        Instantiate(somen3, start3.transform.position, start3.transform.rotation);
+                        break;
+                    case 4:
+                        Instantiate(somen4, start4.transform.position, start4.transform.rotation);
+                        break;
+                }
+                somenListIndex += 1;
+            }
         }
+        //if (Input.GetKeyDown(KeyCode.A))
+        //{
+        //    Instantiate(somen1, start1.transform.position, start1.transform.rotation);
+        //    Instantiate(somen2, start2.transform.position, start2.transform.rotation);
+        //    Instantiate(somen3, start3.transform.position, start3.transform.rotation);
+        //    Instantiate(somen4, start4.transform.position, start4.transform.rotation);
+        //}
 
         if (model.score < model.toBoyScore)
         {

@@ -79,4 +79,9 @@ public class ResultPresenter : MonoBehaviour
     {
         SceneManager.LoadScene("0_Title");
     }
+
+    private void OnDestroy()
+    {
+        model.Clear();
+    }
 }
