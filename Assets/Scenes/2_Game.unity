@@ -28752,6 +28752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32bbacb142e6b4e4f83072e0bd171f8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  view: {fileID: 1130848393}
   somen1: {fileID: 1169715635223090, guid: a7462043075004085b47fb7c9b094515, type: 2}
   somen2: {fileID: 1900838171806204, guid: 8e6287450fb6d4e40923b499b5452c57, type: 2}
   somen3: {fileID: 1457778835497880, guid: c81cf1cf894f34f03a0133709dc14f72, type: 2}

@@ -7,6 +7,7 @@ using UniRx;
 
 public class GamePresenter : MonoBehaviour 
 {
+    public GameView view;
     public GameObject somen1, somen2, somen3, somen4;
     public GameObject start1, start2, start3, start4;
     public GameObject goodJudge;
@@ -99,6 +100,11 @@ public class GamePresenter : MonoBehaviour
                 SceneManager.LoadScene("3_Result");
             }).AddTo(this);
         }
+    }
+
+    private void OnDestroy()
+    {
+        view.ResetCombo();
     }
 
     public void TapButton1()
